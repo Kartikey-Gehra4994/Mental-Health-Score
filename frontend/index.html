@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="MindPulse helps students understand how digital habits and lifestyle patterns relate to their predicted mental health score."
+    >
+
+    <title>MindPulse | Mental Wellness Predictor</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     Background decoration
+========================================================= -->
+<div class="background-decoration" aria-hidden="true">
+    <span class="blob blob-one"></span>
+    <span class="blob blob-two"></span>
+    <span class="blob blob-three"></span>
+</div>
+
+
+<!-- =========================================================
+     Header
+========================================================= -->
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="#home" class="brand" aria-label="MindPulse home">
+            <span class="brand-icon">✦</span>
+            <span>Mind<span>Pulse</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#how-it-works">How it works</a>
+            <a href="#predictor">Predictor</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button
+            type="button"
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+        >
+            <span id="themeIcon">☾</span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     Hero
+========================================================= -->
+<section id="home" class="hero section">
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Wellness technology for students
+            </div>
+
+            <h1>
+                Understand your
+                <span>digital habits.</span>
+            </h1>
+
+            <p class="hero-description">
+                MindPulse analyzes your social media habits, lifestyle,
+                study routine and stress level to estimate a mental
+                health score using a machine learning model.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#predictor" class="btn btn-primary">
+                    Check My Score
+                    <span>→</span>
+                </a>
+
+                <a href="#how-it-works" class="btn btn-secondary">
+                    Learn how it works
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span>🔒</span>
+                Your information stays within this prediction session.
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+            <div class="pulse-card glass-card">
+
+                <div class="pulse-header">
+                    <div>
+                        <span class="small-label">YOUR DIGITAL RHYTHM</span>
+                        <h3>MindPulse</h3>
+                    </div>
+
+                    <div class="pulse-status">
+                        <span></span>
+                        Active
+                    </div>
+                </div>
+
+                <div class="mini-chart">
+                    <div class="chart-line">
+                        <span style="height: 38%"></span>
+                        <span style="height: 55%"></span>
+                        <span style="height: 43%"></span>
+                        <span style="height: 72%"></span>
+                        <span style="height: 62%"></span>
+                        <span style="height: 88%"></span>
+                        <span style="height: 75%"></span>
+                    </div>
+                </div>
+
+                <div class="pulse-stats">
+
+                    <div>
+                        <span>Screen time</span>
+                        <strong>4.5h</strong>
+                    </div>
+
+                    <div>
+                        <span>Sleep</span>
+                        <strong>6.5h</strong>
+                    </div>
+
+                    <div>
+                        <span>Study</span>
+                        <strong>3.0h</strong>
+                    </div>
+
+                </div>
+
+                <div class="floating-score">
+                    <span>Predicted score</span>
+                    <strong>7.8</strong>
+                    <small>/ 10</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     How It Works
+========================================================= -->
+<section id="how-it-works" class="section how-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-kicker">HOW IT WORKS</span>
+            <h2>Three simple steps.</h2>
+            <p>
+                Turn everyday habits into an easy-to-understand
+                wellness signal.
+            </p>
+        </div>
+
+
+        <div class="steps-grid">
+
+            <article class="step-card reveal">
+                <div class="step-number">01</div>
+                <div class="step-icon">⌁</div>
+                <h3>Enter your habits</h3>
+                <p>
+                    Tell us about your social media usage,
+                    study routine, sleep and lifestyle.
+                </p>
+            </article>
+
+
+            <article class="step-card reveal">
+                <div class="step-number">02</div>
+                <div class="step-icon">◉</div>
+                <h3>AI analyzes patterns</h3>
+                <p>
+                    Your information is sent to the trained
+                    machine learning model for prediction.
+                </p>
+            </article>
+
+
+            <article class="step-card reveal">
+                <div class="step-number">03</div>
+                <div class="step-icon">✦</div>
+                <h3>Understand your score</h3>
+                <p>
+                    Receive a simple 0–10 score with supportive
+                    insights about your current patterns.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     Predictor
+========================================================= -->
+<section id="predictor" class="section predictor-section">
+
+    <div class="container predictor-container">
+
+        <div class="section-heading reveal">
+            <span class="section-kicker">MINDPULSE PREDICTOR</span>
+            <h2>Let's understand your rhythm.</h2>
+            <p>
+                Answer a few questions. There are no right or wrong answers.
+            </p>
+        </div>
+
+
+        <!-- Progress -->
+        <div class="progress-wrapper">
+
+            <div class="progress-info">
+                <span id="stepLabel">Step 1 of 3</span>
+                <span id="progressPercent">33%</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div class="progress-steps">
+                <span class="active" data-progress-step="1">About You</span>
+                <span data-progress-step="2">Digital Habits</span>
+                <span data-progress-step="3">Lifestyle</span>
+            </div>
+
+        </div>
+
+
+        <!-- Error -->
+        <div
+            id="apiError"
+            class="api-error"
+            role="alert"
+            aria-live="assertive"
+            hidden
+        ></div>
+
+
+        <!-- Form -->
+        <form id="predictionForm" novalidate>
+
+            <!-- =================================================
+                 STEP 1
+            ================================================== -->
+            <fieldset class="form-step active" data-step="1">
+
+                <legend class="sr-only">About You</legend>
+
+                <div class="form-card">
+
+                    <div class="form-card-header">
+                        <div class="form-card-icon">◎</div>
+                        <div>
+                            <span>STEP 01</span>
+                            <h3>About You</h3>
+                            <p>A little context helps personalize the prediction.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <!-- Age -->
+                        <div class="field">
+                            <label for="age">Age</label>
+
+                            <div class="input-wrapper">
+                                <input
+                                    id="age"
+                                    name="age"
+                                    type="number"
+                                    min="10"
+                                    max="100"
+                                    step="1"
+                                    placeholder="e.g. 20"
+                                    required
+                                >
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                Enter an age between 10 and 100.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Gender -->
+                        <div class="field">
+                            <label for="gender">Gender</label>
+
+                            <div class="input-wrapper">
+                                <select id="gender" name="gender" required>
+                                    <option value="">Choose gender</option>
+                                    <option value="Male">♂ Male</option>
+                                    <option value="Female">♀ Female</option>
+                                </select>
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                Select the option that applies to you.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Country -->
+                        <div class="field">
+                            <label for="country">Country</label>
+
+                            <div class="input-wrapper">
+                                <input
+                                    id="country"
+                                    name="country"
+                                    type="text"
+                                    list="countrySuggestions"
+                                    placeholder="e.g. India"
+                                    required
+                                    autocomplete="country-name"
+                                >
+                                <span class="input-status"></span>
+                            </div>
+
+                            <datalist id="countrySuggestions">
+                                <option value="India">
+                                <option value="USA">
+                                <option value="Canada">
+                                <option value="Australia">
+                                <option value="UK">
+                                <option value="Germany">
+                                <option value="Mexico">
+                                <option value="Turkey">
+                                <option value="France">
+                                <option value="Other">
+                            </datalist>
+
+                            <small class="helper">
+                                Start typing or choose a suggested country.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Academic Level -->
+                        <div class="field">
+                            <label for="academic_level">Academic Level</label>
+
+                            <div class="input-wrapper">
+                                <select
+                                    id="academic_level"
+                                    name="academic_level"
+                                    required
+                                >
+                                    <option value="">Choose level</option>
+                                    <option value="Undergraduate">🎓 Undergraduate</option>
+                                    <option value="Graduate">📚 Graduate</option>
+                                    <option value="High School">🏫 High School</option>
+                                </select>
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                Your current education level.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 STEP 2
+            ================================================== -->
+            <fieldset class="form-step" data-step="2">
+
+                <legend class="sr-only">Digital Habits</legend>
+
+                <div class="form-card">
+
+                    <div class="form-card-header">
+                        <div class="form-card-icon">◌</div>
+                        <div>
+                            <span>STEP 02</span>
+                            <h3>Digital Habits</h3>
+                            <p>Tell us how you interact with social media.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <!-- Platform -->
+                        <div class="field">
+                            <label for="most_used_platform">
+                                Most Used Platform
+                            </label>
+
+                            <div class="input-wrapper">
+                                <select
+                                    id="most_used_platform"
+                                    name="most_used_platform"
+                                    required
+                                >
+                                    <option value="">Choose platform</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Snapchat">Snapchat</option>
+                                    <option value="Twitter">Twitter</option>
+                                    <option value="YouTube">YouTube</option>
+                                    <option value="TikTok">TikTok</option>
+                                    <option value="LINE">LINE</option>
+                                    <option value="KakaoTalk">KakaoTalk</option>
+                                    <option value="VKontakte">VKontakte</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="WeChat">WeChat</option>
+                                </select>
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                Which platform do you use most?
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Purpose -->
+                        <div class="field">
+                            <label for="purpose_of_use">Purpose of Use</label>
+
+                            <div class="input-wrapper">
+                                <select
+                                    id="purpose_of_use"
+                                    name="purpose_of_use"
+                                    required
+                                >
+                                    <option value="">Choose purpose</option>
+                                    <option value="Networking">🤝 Networking</option>
+                                    <option value="Education">📖 Education</option>
+                                    <option value="Entertainment">🎬 Entertainment</option>
+                                    <option value="News">📰 News</option>
+                                </select>
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                Your primary reason for using social media.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Usage -->
+                        <div class="field slider-field full-width">
+                            <div class="slider-heading">
+                                <label for="avg_daily_usage_hours">
+                                    Average Daily Social Media Usage
+                                </label>
+                                <output id="usageOutput">4.5 hrs</output>
+                            </div>
+
+                            <input
+                                id="avg_daily_usage_hours"
+                                name="avg_daily_usage_hours"
+                                type="range"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="4.5"
+                                required
+                            >
+
+                            <div class="range-labels">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                            <small class="helper">
+                                Approximate total time spent on social platforms each day.
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+
+                        <!-- Unlocks -->
+                        <div class="field full-width">
+                            <label for="daily_unlocks">Daily Phone Unlocks</label>
+
+                            <div class="input-wrapper">
+                                <input
+                                    id="daily_unlocks"
+                                    name="daily_unlocks"
+                                    type="number"
+                                    min="0"
+                                    step="1"
+                                    placeholder="e.g. 60"
+                                    required
+                                >
+                                <span class="input-status"></span>
+                            </div>
+
+                            <small class="helper">
+                                How many times do you unlock your phone on an average day?
+                            </small>
+
+                            <small class="validation-message"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 STEP 3
+            ================================================== -->
+            <fieldset class="form-step" data-step="3">
+
+                <legend class="sr-only">Lifestyle</legend>
+
+                <div class="form-card">
+
+                    <div class="form-card-header">
+                        <div class="form-card-icon">♡</div>
+                        <div>
+                            <span>STEP 03</span>
+                            <h3>Lifestyle</h3>
+                            <p>Your daily routine completes the picture.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <!-- Study -->
+                        <div class="field slider-field full-width">
+
+                            <div class="slider-heading">
+                                <label for="study_hours">Study Hours Per Day</label>
+                                <output id="studyOutput">3 hrs</output>
+                            </div>
+
+                            <input
+                                id="study_hours"
+                                name="study_hours"
+                                type="range"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="3"
+                                required
+                            >
+
+                            <div class="range-labels">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                            <small class="helper">
+                                Average time spent studying each day.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Activity -->
+                        <div class="field slider-field full-width">
+
+                            <div class="slider-heading">
+                                <label for="physical_activity_hours">
+                                    Physical Activity Per Day
+                                </label>
+                                <output id="activityOutput">1 hr</output>
+                            </div>
+
+                            <input
+                                id="physical_activity_hours"
+                                name="physical_activity_hours"
+                                type="range"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="1"
+                                required
+                            >
+
+                            <div class="range-labels">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                            <small class="helper">
+                                Include walking, sports, gym or other physical activity.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Sleep -->
+                        <div class="field slider-field full-width">
+
+                            <div class="slider-heading">
+                                <label for="sleep_Hours_per_night">
+                                    Sleep Per Night
+                                </label>
+                                <output id="sleepOutput">6.5 hrs</output>
+                            </div>
+
+                            <input
+                                id="sleep_Hours_per_night"
+                                name="sleep_Hours_per_night"
+                                type="range"
+                                min="0"
+                                max="24"
+                                step="0.5"
+                                value="6.5"
+                                required
+                            >
+
+                            <div class="range-labels">
+                                <span>0 hrs</span>
+                                <span>24 hrs</span>
+                            </div>
+
+                            <small class="helper">
+                                Your typical amount of sleep per night.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Stress -->
+                        <div class="field full-width">
+
+                            <label>Current Stress Level</label>
+
+                            <div
+                                class="stress-options"
+                                role="radiogroup"
+                                aria-label="Current stress level"
+                            >
+
+                                <label class="stress-option low">
+                                    <input
+                                        type="radio"
+                                        name="stress_level"
+                                        value="Low"
+                                    >
+                                    <span>
+                                        <strong>Low</strong>
+                                        <small>Feeling relaxed</small>
+                                    </span>
+                                </label>
+
+
+                                <label class="stress-option medium">
+                                    <input
+                                        type="radio"
+                                        name="stress_level"
+                                        value="Medium"
+                                    >
+                                    <span>
+                                        <strong>Medium</strong>
+                                        <small>Some pressure</small>
+                                    </span>
+                                </label>
+
+
+                                <label class="stress-option high">
+                                    <input
+                                        type="radio"
+                                        name="stress_level"
+                                        value="High"
+                                    >
+                                    <span>
+                                        <strong>High</strong>
+                                        <small>Quite stressed</small>
+                                    </span>
+                                </label>
+
+
+                                <label class="stress-option very-high">
+                                    <input
+                                        type="radio"
+                                        name="stress_level"
+                                        value="Very High"
+                                    >
+                                    <span>
+                                        <strong>Very High</strong>
+                                        <small>Under heavy pressure</small>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                            <small
+                                id="stressValidation"
+                                class="validation-message"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- =================================================
+                 Form Navigation
+            ================================================== -->
+            <div class="form-navigation">
+
+                <button
+                    type="button"
+                    id="prevBtn"
+                    class="btn btn-secondary"
+                    hidden
+                >
+                    ← Back
+                </button>
+
+                <div class="navigation-spacer"></div>
+
+                <button
+                    type="button"
+                    id="nextBtn"
+                    class="btn btn-primary"
+                >
+                    Continue
+                    <span>→</span>
+                </button>
+
+                <button
+                    type="submit"
+                    id="submitBtn"
+                    class="btn btn-primary"
+                    hidden
+                    disabled
+                >
+                    <span class="button-text">Predict My Score</span>
+                    <span class="spinner" hidden></span>
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     Result
+========================================================= -->
+<section
+    id="resultSection"
+    class="section result-section"
+    aria-live="polite"
+    hidden
+>
+
+    <div class="container result-container">
+
+        <div class="result-card">
+
+            <div class="result-kicker">YOUR MINDPULSE RESULT</div>
+
+            <h2>Your predicted wellness score</h2>
+
+            <p class="result-intro">
+                This score is a model-based estimate based on the
+                information you provided.
+            </p>
+
+
+            <!-- Gauge -->
+            <div class="gauge-wrapper">
+
+                <svg
+                    class="score-gauge"
+                    viewBox="0 0 240 240"
+                    aria-label="Predicted mental health score"
+                    role="img"
+                >
+                    <defs>
+                        <linearGradient
+                            id="gaugeGradient"
+                            x1="0%"
+                            y1="100%"
+                            x2="100%"
+                            y2="0%"
+                        >
+                            <stop offset="0%" stop-color="#ef4444"/>
+                            <stop offset="50%" stop-color="#f59e0b"/>
+                            <stop offset="100%" stop-color="#10b981"/>
+                        </linearGradient>
+                    </defs>
+
+                    <circle
+                        class="gauge-background"
+                        cx="120"
+                        cy="120"
+                        r="92"
+                    />
+
+                    <circle
+                        id="gaugeProgress"
+                        class="gauge-progress"
+                        cx="120"
+                        cy="120"
+                        r="92"
+                    />
+                </svg>
+
+
+                <div class="gauge-content">
+                    <span class="gauge-label">SCORE</span>
+                    <strong id="scoreValue">0.0</strong>
+                    <span class="gauge-max">/ 10</span>
+                </div>
+
+            </div>
+
+
+            <div id="scoreCategory" class="score-category">
+                Fair
+            </div>
+
+            <p id="scoreMessage" class="score-message">
+                Your result is a snapshot of the patterns you shared.
+            </p>
+
+
+            <!-- Influences -->
+            <div class="influence-box">
+
+                <div class="influence-header">
+                    <span>✦</span>
+                    <h3>What may be influencing your result</h3>
+                </div>
+
+                <ul id="influenceList"></ul>
+
+            </div>
+
+
+            <div class="result-actions">
+
+                <button
+                    type="button"
+                    id="tryAgainBtn"
+                    class="btn btn-primary"
+                >
+                    Try another prediction
+                    <span>↻</span>
+                </button>
+
+                <button
+                    type="button"
+                    id="editAnswersBtn"
+                    class="btn btn-secondary"
+                >
+                    Edit my answers
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     About
+========================================================= -->
+<section id="about" class="section about-section">
+
+    <div class="container about-grid">
+
+        <div class="reveal">
+            <span class="section-kicker">A GENTLE REMINDER</span>
+            <h2>A score is not a diagnosis.</h2>
+        </div>
+
+        <div class="about-copy reveal">
+            <p>
+                MindPulse is an educational machine learning project.
+                Its prediction is based on patterns learned from data
+                and should not be treated as medical or psychological advice.
+            </p>
+
+            <p>
+                If you're concerned about your wellbeing, consider talking
+                with a qualified healthcare or mental health professional.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     Footer
+========================================================= -->
+<footer class="site-footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+            <div class="brand">
+                <span class="brand-icon">✦</span>
+                <span>Mind<span>Pulse</span></span>
+            </div>
+
+            <p>
+                Understand your habits. Understand your rhythm.
+            </p>
+        </div>
+
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#predictor">Predictor</a>
+            <a href="#about">Disclaimer</a>
+        </div>
+
+
+        <div class="footer-bottom">
+            <span>© 2026 MindPulse</span>
+            <span>Built with FastAPI + Machine Learning</span>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
