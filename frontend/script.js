@@ -434,13 +434,27 @@ function validateCurrentStep() {
 
     }
 
+    if (currentStep < TOTAL_STEPS) {
 
-    if (currentStep === TOTAL_STEPS) {
+    // Step 1 / Step 2
+    // Continue depends on current step validation
+    nextBtn.disabled = !valid;
 
-        submitBtn.disabled = !valid;
+    // Predict is always disabled before Step 3
+    submitBtn.disabled = true;
 
     }
 
+    else {
+
+        // Step 3
+        // Continue must stay disabled
+        nextBtn.disabled = true;
+
+        // Predict becomes active only when Step 3 is complete
+        submitBtn.disabled = !valid;
+
+    }
 
     return valid;
 
@@ -589,21 +603,26 @@ function updateWizard() {
         });
 
 
-    prevBtn.hidden =
-        currentStep === 1;
+    prevBtn.hidden = currentStep === 1;
 
+    // Continue button always visible
+    nextBtn.hidden = false;
 
-    nextBtn.hidden =
-        currentStep === TOTAL_STEPS;
+    // Predict button always visible
+    submitBtn.hidden = false;
 
-
-    submitBtn.hidden =
-        currentStep !== TOTAL_STEPS;
-
-
+    // Step 3 par Continue permanently disabled
     if (currentStep === TOTAL_STEPS) {
-        validateCurrentStep();
+        nextBtn.disabled = true;
     }
+
+    // Step 1/2 par Predict disabled
+    else {
+        submitBtn.disabled = true;
+    }
+
+    // Validate current step
+    validateCurrentStep();
 
 }
 
